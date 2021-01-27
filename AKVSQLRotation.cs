@@ -23,8 +23,8 @@ namespace Microsoft.KeyVault
             log.LogInformation($"Key Vault Name: {keyVaultName}");
             log.LogInformation($"Secret Name: {secretName}");
             log.LogInformation($"Secret Version: {secretVersion}");
-            log.LogInformation($"Event Data: {eventGridEvent.Data.ToString()}";
-            log.LogInformation($"Event: {eventGridEvent.ToString()}";
+            log.LogInformation($"Event Data: {eventGridEvent.Data.ToString()}");
+            log.LogInformation($"Event: {eventGridEvent.ToString()}");
 
             SecretRotator.RotateSecret(log, secretName, keyVaultName);
         }
